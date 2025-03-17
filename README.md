@@ -37,7 +37,7 @@ factor → NUMBER
 
 ## **C Code for the Translator**
 
-Here given the code: (Code)[translator.c]
+Here is the implimentation with C programming language: [translator.c](translator.c)
 
 ---
 
