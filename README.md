@@ -46,7 +46,6 @@ Here is the implimentation with C programming language: [translator.c](translato
 2. **`expression()`**: Handles addition and subtraction.
 3. **`term()`**: Handles multiplication and division.
 4. **`factor()`**: Handles numbers and parentheses.
-5. **Postfix output** is generated as the parse tree is traversed.
 
 ---
 
