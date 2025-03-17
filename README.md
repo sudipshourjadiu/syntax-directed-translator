@@ -6,16 +6,10 @@ Here is **Syntax-Directed Translator (SDT)** for simple arithmetic expressions *
 
 However, we would need to manually implement the **lexical analysis**, **parsing**, and **translation logic** in C.
 
----
-
-## **Approach:**
-
 ### **Key Components:**
 1. **Lexical Analysis**: Tokenize the input (numbers and operators).
 2. **Recursive Descent Parsing**: Parse the input based on grammar rules.
 3. **Postfix Translation**: Emit the corresponding postfix notation or assembly-like instructions.
-
----
 
 ## **Grammar for Arithmetic Expressions**
 We will use the same grammar:
@@ -33,21 +27,15 @@ factor → NUMBER
        | ( expression )
 ```
 
----
-
 ## **C Code for the Translator**
 
-Here is the implimentation with C programming language: [translator.c](translator.c)
-
----
+Here is the implimentation [code](translator.c) with C programming language.
 
 ## **Explanation:**
 1. **`nextToken()`**: Moves to the next character.
 2. **`expression()`**: Handles addition and subtraction.
 3. **`term()`**: Handles multiplication and division.
 4. **`factor()`**: Handles numbers and parentheses.
-
----
 
 ## **Input and Output Examples:**
 
@@ -56,8 +44,6 @@ Here is the implimentation with C programming language: [translator.c](translato
 | `2 + 3 * 4`          | `2 3 4 * +` |
 | `(5 - 2) * 8`       | `5 2 - 8 *` |
 | `7 + (6 / 3) * 2` | `7 6 3 / 2 * +` |
-
----
 
 ## **Advantages of this Approach:**
 - No dependency on external tools like Flex or Bison.
